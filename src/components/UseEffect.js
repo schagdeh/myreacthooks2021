@@ -6,7 +6,12 @@ const UseEffect = () => {
 
     useEffect(() => {
         //console.log('helo useEffect');
-        document.title = `Chats (${count})`
+        // we can use condition within hooks but we cannot use hooks within conditions.
+        if(count >= 1) {
+            document.title = `Chats (${count})`
+        } else {
+            document.title = "Chats"
+        }
     })
     console.log('helo outside');
     return (
