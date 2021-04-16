@@ -3,6 +3,7 @@ import './App.css';
 import Uncontrolled from './components/forms/Uncontrolled';
 import UseEffect from './components/UseEffect'
 import UseEffect2 from './components/UseEffect2';
+import UseReducer from './components/UseReducer';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <UseEffect/>
       <UseEffect2/>
       <Uncontrolled/>
+      <UseReducer/>
       <div className="App">
       <h1>
       { myName }
