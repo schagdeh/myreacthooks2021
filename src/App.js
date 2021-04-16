@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './App.css';
+import UseEffect from './components/UseEffect'
 
 function App() {
 
@@ -10,12 +11,15 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <>
+      <UseEffect/>
+      <div className="App">
       <h1>
       { myName }
       </h1>
       <button onClick={changeMyName}>click me</button>
     </div>
+    </>
   );
 }
 
