@@ -12,7 +12,8 @@ const UseEffect = () => {
         } else {
             document.title = "Chats"
         }
-    })
+    }, [count]);
+
     console.log('helo outside');
     return (
         <div>
